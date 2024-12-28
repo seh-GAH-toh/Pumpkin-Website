@@ -6,7 +6,6 @@ export default defineConfig({
   description:
     "Empowering everyone to host fast and efficient Minecraft servers",
   lang: "en-US",
-  base: "/Pumpkin-Website/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
