@@ -64,17 +64,17 @@ export default defineConfig({
     
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/Snowiiii/Pumpkin" },
+      { icon: "github", link: "https://github.com/Pumpkin-MC/Pumpkin" },
       { icon: "discord", link: "https://discord.gg/RNm224ZsDq" },
     ],
 
-    logo: "/assets/icon.png",
+    logo: "/Pumpkin/assets/favicon.ico",
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2024-present Aleksandr Medvedev",
     },
     editLink: {
-      pattern: "https://github.com/Snowiiii/Pumpkin/blob/master/docs/:path",
+      pattern: "https://github.com/Pumpkin-MC/Pumpkin-Website/blob/master/docs/:path",
       text: "Edit this page on GitHub",
     },
     lastUpdated: {
@@ -86,5 +86,5 @@ export default defineConfig({
     },
     outline: "deep"
   },
-  head: [["link", { rel: "icon", href: "/Pumpkin/assets/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/assets/favicon.ico" }]],
 });
