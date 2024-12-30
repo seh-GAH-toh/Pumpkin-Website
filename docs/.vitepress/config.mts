@@ -73,7 +73,7 @@ export default defineConfig({
             { icon: "discord", link: "https://discord.gg/RNm224ZsDq" },
         ],
 
-        logo: "/Pumpkin/assets/favicon.ico",
+        logo: "/assets/favicon.ico",
         footer: {
             message: "Released under the MIT License.",
             copyright: "Copyright © 2024-present Aleksandr Medvedev",
