@@ -94,11 +94,12 @@ export default defineConfig({
     },
     head: [
         ["link", { rel: "shortcut icon", href: "/assets/favicon.ico" }],
-        ["link", { rel: "icon", href: "/assets/icon_32x32.png", sizes: "32x32" }],
-        ["link", { rel: "icon", href: "/assets/icon_48x48.png", sizes: "48x48" }],
-        ["link", { rel: "icon", href: "/assets/icon_96x96.png", sizes: "96x96" }],
-        ["link", { rel: "icon", href: "/assets/icon_144x144.png", sizes: "144x144" }],
+        ["link", { rel: "icon", type: "image/png", href: "/assets/favicon-96x96.png", sizes: "96x96" }],
+        ["link", { rel: "icon", type: "image/svg+xml", href: "/assets/favicon.svg" }],
+        ["link", { rel: "apple-touch-icon", href: "/assets/apple-touch-icon.png", sizes: "180x180" }],
+        ["link", { rel: "manifest", href: "/assets/site.webmanifest" }],
         
+        ["meta", { name: "apple-mobile-web-app-title", content: "Pumpkin" }],
         ["meta", { name: "keywords", content: "minecraft, performance, pumpkin, rust, server" }],
     ],
 });
