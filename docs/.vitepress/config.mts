@@ -48,12 +48,14 @@ export default defineConfig({
                 items: [
                     { text: "Contributing", link: "/developer/contributing" },
                     { text: "Introduction", link: "/developer/introduction" },
-                    { text: "Networking", link: "/developer/networking" },
                     {
-                        text: "Authentication",
-                        link: "/developer/authentication",
+                        text: "Networking",
+                        link: "/developer/networking/networking",
+                        items: [
+                            { text: "Authentication", link: "/developer/networking/authentication" },
+                            { text: "RCON", link: "/developer/networking/rcon" },
+                        ]
                     },
-                    { text: "RCON", link: "/developer/rcon" },
                     { text: "World", link: "developer/world" },
                 ],
             },
@@ -98,6 +100,8 @@ export default defineConfig({
         ["link", { rel: "icon", type: "image/svg+xml", href: "/assets/favicon.svg" }],
         ["link", { rel: "apple-touch-icon", href: "/assets/apple-touch-icon.png", sizes: "180x180" }],
         ["link", { rel: "manifest", href: "/assets/site.webmanifest" }],
+        
+        ["link", { rel: "canonical", href: "https://pumpkinmc.org/" }],
         
         ["meta", { name: "apple-mobile-web-app-title", content: "Pumpkin" }],
         ["meta", { name: "keywords", content: "minecraft, performance, pumpkin, rust, server" }],

@@ -1,6 +1,6 @@
 ### Networking
 
-Most of the Networking code in Pumpkin can be found at [Pumpkin-Protocol](https://github.com/Snowiiii/Pumpkin/tree/master/pumpkin-protocol)
+Most of the Networking code in Pumpkin can be found at [Pumpkin-Protocol](https://github.com/Pumpkin-MC/Pumpkin/tree/master/pumpkin-protocol)
 
 Serverbound: Client→Server
 
