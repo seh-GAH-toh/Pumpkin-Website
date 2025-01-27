@@ -1,31 +1,16 @@
-### Authentication
+## Authentication
+### Why authentication
+Offline accounts, that is, accounts generated from a player's username without contacting an authorization or authentication server, can have any nickname chosen. This, without additional plugins, means that players can impersonate other players, including those with operator permissions.
 
-### Why Authentication
+### Offline server
+By default, online_mode is enabled in the configuration. This enables authentication, disabling Offline Accounts. If you want to allow offline accounts, you can disable online_mode in the configuration.toml.
 
-Minecraft is the most popular game out there and is very easy to play without paying for it. In fact, you don't pay for the game; you pay for a Minecraft account. People who don't buy the game but play it online are using [Cracked Accounts](#cracked-accounts).
-
-#### Cracked Accounts
-
-- Don't cost any money.
-- Everyone can set their own nickname.
-- Have no UUID.
-- Have no skin/cape.
-- Not secure.
-
-The problem is that everyone can name themselves however they want, which allows them to join the server as a staff member, for example, and have extended permissions. Cracked accounts are also often used for botting and [Denial of Service](https://en.wikipedia.org/wiki/Denial-of-service_attack) attacks.
-
-### Cracked Server
-
-By default, `online_mode` is enabled in the configuration. This enables authentication, disabling [Cracked Accounts](#cracked-accounts). If you want to allow cracked accounts, you can disable `online_mode` in the `configuration.toml`.
-
-### How Mojang Authentication Works
-
-To ensure a player has a premium account:
-
-1. A client with a premium account sends a login request to the Mojang session server.
-2. **Mojang's servers** verify the client's credentials and add the player to their servers.
-3. Our server sends a request to the session servers to check if the player has joined the session server.
-4. If the request is successful, it will provide more information about the player (e.g., UUID, name, skin/cape...).
+### How Yggdrasil Auth works
+1. The client gets an authentication token and UUID from the launcher
+2. The client, during loading, fetches data from the authorization/authentication server using the authentication token, such as various signing keys and the list of blocked servers.
+3. The client, when joining the server, sends a join request to the authorization/authentication servers. Mojang servers can deny this request if the account is banned.
+4. The client sends its identification in a packet to the server
+5. The server, based on this identification, sends a hasJoined request to the authorization/authentication servers. If it succeeds, it obtains the player information, such as the skin.
 
 ### Custom Authentication Server
 
