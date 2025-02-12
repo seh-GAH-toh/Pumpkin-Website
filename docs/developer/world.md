@@ -1,9 +1,5 @@
 ### World Formats
 
-> [!IMPORTANT]
-> Currently, Pumpkin only supports Anvil World Format, which is the format used by vanilla
-> Minecraft. There is planned support for other world formats in the future though, as listed below.
-
 #### Region File Format
 
 Minecraft Beta 1.3 to Release 1.2 used a Minecraft format known as "Region file format".
