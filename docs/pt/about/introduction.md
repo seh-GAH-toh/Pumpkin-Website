@@ -28,6 +28,6 @@ Pumpkin é um servidor de Minecraft construído inteiramente em **Rust**, oferec
 
 O Pumpkin foi projetado para replicar a lógica do Minecraft Vanilla o mais fielmente possível, garantindo uma experiência de jogo familiar. No entanto, também adicionamos novos recursos para aprimorar o gameplay.
 
-### Redstone
+## Redstone
 
 Ao contrário de outros forks que podem comprometer as mecânicas de redstone, o Pumpkin mantém o comportamento de redstone do Vanilla. Se você deseja experimentar modificações em redstone ou busca otimizações de desempenho, você tem flexibilidade para fazer isso por meio das nossas configurações ajustáveis.
